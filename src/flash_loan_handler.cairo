@@ -14,7 +14,9 @@ pub trait IFlashLoanHandler<TContractState> {
 #[starknet::contract]
 mod FlashLoanHandler {
     use starknet::{ContractAddress, get_contract_address};
-    use openzeppelin_token::erc20::interface::{IERC20Dispatcher, IERC20DispatcherTrait};
+    use openzeppelin_token::erc20::interface::{
+        IERC20Dispatcher, IERC20DispatcherTrait
+    };
     use crate::interfaces::{
         IMarketDispatcher, IMarketDispatcherTrait, IZklendFlashCallback
     };
